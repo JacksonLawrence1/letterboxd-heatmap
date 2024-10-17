@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: "liga" 1, "calt" 1;
+}
+
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: "InterVariable", sans-serif;
+  }
+}
+.font-inter-bold {
+  font-family: inherit;
+  font-variation-settings: "wght" 700;
+}
+
+.font-inter-semibold {
+  font-family: inherit;
+  font-variation-settings: "wght" 600;
+}
+
+.font-inter-medium {
+  font-family: inherit;
+  font-variation-settings: "wght" 500;
+}
+
+.font-inter-light {
+  font-family: inherit;
+  font-variation-settings: "wght" 300;
+}

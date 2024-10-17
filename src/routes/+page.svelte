@@ -1,2 +1,19 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+	import Heatmap from '$lib/components/Heatmap.svelte';
+	import UsernameSearch from '$lib/components/UsernameSearch.svelte';
+
+	let username: string = $state('');
+	let query: string = $state('');
+
+	let onSubmit: (_: Event) => void = () => {
+		// sanitize username
+
+		query = username;
+	};
+</script>
+
+<UsernameSearch bind:username={username} onSubmit={onSubmit} />
+
+<Heatmap username={query} />
+
+
