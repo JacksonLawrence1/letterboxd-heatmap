@@ -13,7 +13,7 @@
 			</a>
 		</div>
 	</div>
-	<div class="mx-auto w-full max-w-screen-lg flex flex-col border my-8 px-4">
+	<div class="mx-auto w-full max-w-screen-lg flex flex-col my-8 px-4 gap-4">
 		{@render children()}
 	</div>
 </div>
